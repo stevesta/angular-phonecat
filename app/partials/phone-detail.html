@@ -10,6 +10,11 @@
   </li>
 </ul>
 
+<ul ng-repeat="img in phone.images | group_by_two">
+	<li>{{ img.0 }}</li>
+	<li>{{ img.1 }}</li>
+</ul>
+
 <ul class="specs">
   <li>
     <span>Availability and Networks</span>
